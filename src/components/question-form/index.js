@@ -20,7 +20,10 @@ const QuestionForm = ({ closeModal, questionCreate }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Need to submit to the database
-    const response = await axios.post("/createquestion", questionForm);
+    const response = await axios.post(
+      "https://shrouded-brushlands-72921.herokuapp.com/createquestion",
+      questionForm
+    );
     console.log(questionForm);
     console.log(response);
     closeModal();

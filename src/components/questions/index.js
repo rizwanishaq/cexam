@@ -12,7 +12,9 @@ const Questions = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("/questions");
+      const response = await axios.get(
+        "https://shrouded-brushlands-72921.herokuapp.com/questions"
+      );
       setQuestions(response.data.data);
     };
     fetchData();
