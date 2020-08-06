@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
+    "gatsby-plugin-manifest": "^2.2.16",
+    "gatsby-plugin-offline": "^3.0.14",
+    "gatsby-plugin-sharp": "^2.2.29",
+    "gatsby-transformer-sharp": "^2.2.14",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-modal": "^3.8.1",
