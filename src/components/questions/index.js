@@ -12,9 +12,7 @@ const Questions = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get(
-        "https://radiant-bayou-60840.herokuapp.com/questions"
-      );
+      const response = await axios.get("/questions");
       setQuestions(response.data.data);
     };
     fetchData();
